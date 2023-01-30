@@ -1,4 +1,18 @@
-<?php include "../parts/header.php";?>
+<?php
+session_start();
+if (isset($_SESSION['rol'])){
+ 
+    $_SESSION['start'] = time();
+    $_SESSION['expire'] = $_SESSION['start'] + (40 * 60) ;
+} else {
+  header("Location: /../views/auth/login.php");
+
+  die() ;
+}
+
+?>
+<?php include "/../parts/header.php";?>
+
 
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
