@@ -1,0 +1,6 @@
+env
+vendor/
+blog.sql
+package.json
+package-lock.json
+.env

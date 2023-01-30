@@ -1,20 +1,20 @@
 <?php return array(
     'root' => array(
-        'name' => '__root__',
+        'name' => 'aramis/proyecto_dsw_dpl',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => 'e82b1ad4c8477299b7eb27e44dee96f3c4c86529',
-        'type' => 'library',
+        'reference' => '509fb2dbf0f14ab4347f9f20fda73fdf9d343cea',
+        'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'dev' => true,
     ),
     'versions' => array(
-        '__root__' => array(
+        'aramis/proyecto_dsw_dpl' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'e82b1ad4c8477299b7eb27e44dee96f3c4c86529',
-            'type' => 'library',
+            'reference' => '509fb2dbf0f14ab4347f9f20fda73fdf9d343cea',
+            'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
             'dev_requirement' => false,
