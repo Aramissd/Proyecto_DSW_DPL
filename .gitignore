@@ -1,4 +1,3 @@
-env
 vendor/
 blog.sql
 package.json
