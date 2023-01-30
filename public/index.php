@@ -1,11 +1,12 @@
 <?php
+ob_start();
 session_start();
 if (isset($_SESSION['rol'])){
  
     $_SESSION['start'] = time();
     $_SESSION['expire'] = $_SESSION['start'] + (40 * 60) ;
 } else {
-  header("Location: ../login.php");
+  header("Location: /../views/auth/login.php");
   
   die() ;
 }
