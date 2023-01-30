@@ -1,5 +1,5 @@
 vendor/
 blog.sql
 composer.json
-compoerse.lock
+composer.lock
 .env
