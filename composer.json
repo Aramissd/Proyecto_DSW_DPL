@@ -1,0 +1,9 @@
+{
+    "name": "aramis/proyecto_dsw_dpl",
+    "description": "Proyecto PHP 8, SQL,PHP",
+    "type": "project",
+    "require": 
+    {
+                "vlucas/phpdotenv": "^5.5"
+    }
+}
