@@ -5,8 +5,8 @@ if (isset($_SESSION['rol'])){
     $_SESSION['start'] = time();
     $_SESSION['expire'] = $_SESSION['start'] + (40 * 60) ;
 } else {
-  header("Location:https://blogaramis.herokuapp.com/views/auth/login.php");
-
+  header("Location: /../views/login.php");
+  
   die() ;
 }
 
