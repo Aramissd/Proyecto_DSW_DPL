@@ -1,4 +1,4 @@
-<?php include "../parts/header_index.php";?>
+<?php include "/parts/header_index.php;"?>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">Aramis Blog</a>
