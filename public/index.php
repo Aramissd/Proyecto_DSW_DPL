@@ -1,7 +1,7 @@
 <?php 
 session_start();
-$rol = $_SESSION['rol'];
-if ($rol === "Administrador"){
+
+if ($rol = $_SESSION['rol']){
     $rol = $_SESSION['rol'];
     $_SESSION['start'] = time();
     $_SESSION['expire'] = $_SESSION['start'] + (40 * 60);
