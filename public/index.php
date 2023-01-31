@@ -1,3 +1,4 @@
+<?php include "../parts/header_index.php";?>
 <?php
 ob_start();
 session_start();
@@ -13,7 +14,6 @@ if (isset($_SESSION['rol'])){
 }
 
 ?>
-<?php include "../parts/header_index.php";?>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">Aramis Blog</a>
