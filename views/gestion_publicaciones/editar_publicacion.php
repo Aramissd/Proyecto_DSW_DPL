@@ -93,11 +93,11 @@ if ($rol === "Administrador"){
             ?>
         </select>
     </div>
-        <input type="submit" class="btn btn-warning " name="editar_publicacion" value="Editar publicación">
+        <input type="submit" class="btn btn-warning " name="editar_publicacion" value="Editar publicación"><br><br>
         </form>
   </div>
 
-  <footer class="text-center text-lg-start bg-light text-muted">
+  <footer class="text-center text-lg-start bg-light text-muted" style = "width:100%; position:relative; bottom:0;">
      
         <div class="text-center p-4">
             © 2023 Copyright Aramis Blog

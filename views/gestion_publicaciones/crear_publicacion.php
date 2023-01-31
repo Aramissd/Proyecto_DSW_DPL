@@ -26,7 +26,7 @@ if ($rol === "Administrador"){
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="../../public/index.php">Inicio</a>
-        < /li>
+        </li>
           <li class="nav-item">
             <a class="nav-link" href="#"></a>
           </li>

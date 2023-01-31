@@ -93,7 +93,7 @@ if ($rol === "Administrador"){
           </tbody>
         </table>
     </div>
-    <footer class="text-center text-lg-start bg-light text-muted">
+    <footer class="text-center text-lg-start bg-light text-muted" style ="width:100%; position:absolute; bottom:0;">
         <div class="text-center p-4 bg-light">
           © 2023 Copyright Aramis Blog
       </div>

@@ -328,7 +328,7 @@ function obtenerCategorias($con){
 *Obtiene todos los usuarios de la tabla 'usuarios' de la base de datos.
 *@access public
 *@param mysqli $db Conexión a la base de datos
-*@return array Devuelve un array con los datos de todos los usuarios de la base de datos. En caso de no haber usuarios, el array estará vacío.
+*@return array|mysqli_result Devuelve un array con los datos de todos los usuarios de la base de datos. En caso de no haber usuarios, el array estará vacío.
 */
 function ver_usuarios($db)
 {
