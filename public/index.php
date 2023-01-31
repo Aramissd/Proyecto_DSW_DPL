@@ -1,4 +1,16 @@
-<?php include "/parts/header_index.php";?>
+<?php 
+session_start();
+$rol = $_SESSION['rol'];
+if ($rol === "Administrador"){
+    $rol = $_SESSION['rol'];
+    $_SESSION['start'] = time();
+    $_SESSION['expire'] = $_SESSION['start'] + (40 * 60);
+} else{
+  header('Location: ../views/auth/login.php'); //Aqui lo redireccionas al lugar que quieras.
+  die() ;
+}
+?>
+<?php include "../parts/header_index.php";?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
