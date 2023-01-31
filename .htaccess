@@ -1,7 +1,7 @@
 Options -MultiViews
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^blogaramis.com
-RewriteRule (.*) http://www.blogaramis.com/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^blogaramis.herokuapp.com
+RewriteRule (.*) http://www.blogaramis.herokuapp.com/$1 [R=301,L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^ index.php [QSA,L]
 AllowOverride All
