@@ -18,7 +18,7 @@ if ($rol === "Administrador"){
 ?>
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="../../public/index.php">Blog</a>
+      <a class="navbar-brand" href="../../public/index.php">Aramis Blog</a>
       <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button> -->
@@ -71,7 +71,7 @@ if ($rol === "Administrador"){
      
   </div>
 
-  <footer class="text-center text-lg-start bg-light text-muted">
+  <footer class="text-center text-lg-start bg-light text-muted" style ="width:100%; position:absolute; bottom:0;">
      
         <div class="text-center p-4">
             © 2023 Copyright Aramis Blog

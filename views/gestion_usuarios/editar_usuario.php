@@ -78,7 +78,7 @@ if ($rol === "Administrador"){
      
   </div>
 
-  <footer class="text-center text-lg-start bg-light text-muted">
+  <footer class="text-center text-lg-start bg-light text-muted" style ="width:100%; position:absolute; bottom:0;">
      
         <div class="text-center p-4">
             © 2023 Copyright Aramis Blog

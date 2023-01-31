@@ -11,15 +11,6 @@ if ($rol === "Administrador"){
 }
 ?>
 <?php include "../parts/header_index.php";?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" http-equiv="refresh">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-</head>
-<body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">Aramis Blog</a>
@@ -60,6 +51,8 @@ if ($rol === "Administrador"){
     <br>
     <div class="container">
       <div class="row">
+
+     
         
       <?php
         $publicaciones = obtenerUltimasPublicaciones($db);
@@ -67,6 +60,8 @@ if ($rol === "Administrador"){
             while($publicacion = mysqli_fetch_assoc($publicaciones)):
               
       ?>
+
+
         <div class="col-md-8 mx-auto">
           <div class="card mb-3">
             <img src= <?php echo "../views/gestion_publicaciones/images/$publicacion[imagen]"?> class="card-img-top" alt="..." width="200" height="400"/>
@@ -85,17 +80,20 @@ if ($rol === "Administrador"){
         endif;
         ?>
 
-        </div>
       </div>
-      <footer class="text-center text-lg-start bg-light text-muted" style = "width:100%; position:relative; bottom:0;">
-     
-        <div class="text-center p-4">
-            © 2023 Copyright Aramis Blog
-       </div>
-    </footer>
+    </div>
+    
+
     </main>
 
+        <footer class="text-center text-lg-start bg-light text-muted">
+
+            <div class="text-center p-4">
+              © 2023 Copyright Aramis Blog
+
+            </div>
+        
+
+        </footer>
     
     <?php include "../parts/footer.php";?>
-
-

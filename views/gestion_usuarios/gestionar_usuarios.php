@@ -25,7 +25,8 @@ if ($rol === "Administrador"){
             <li class="nav-item">
               <a class="nav-link" href="../gestion_usuarios/gestionar_usuarios.php"><?php if ($_SESSION['rol'] === "Administrador") {
                 echo "Gestionar usuarios";
-              }?></a>
+              }?>
+              </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../gestion_categorias/gestionar_categorias.php"><?php if ($_SESSION['rol'] === "Administrador") {
