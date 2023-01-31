@@ -1,0 +1,5 @@
+/vendor/
+blog.sql
+composer.json
+composer.lock
+.env
