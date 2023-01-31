@@ -1,6 +1,5 @@
 <?php include "../parts/header_index.php";?>
 <?php
-ob_start();
 session_start();
 if (isset($_SESSION['rol'])){
  
