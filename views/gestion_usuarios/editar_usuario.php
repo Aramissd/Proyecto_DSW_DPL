@@ -40,7 +40,7 @@ if ($rol === "Administrador"){
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="gestionar_publicaciones.php"><?php if ($_SESSION['rol'] === "Administrador") {
+            <a class="nav-link" href="../gestion_publicaciones/gestionar_publicaciones.php"><?php if ($_SESSION['rol'] === "Administrador") {
               echo "Gestionar publicaciones";
             }?></a>
           </li>
@@ -78,7 +78,7 @@ if ($rol === "Administrador"){
      
   </div>
 
-  <footer class="text-center text-lg-start bg-light text-muted" style ="width:100%; position:absolute; bottom:0;">
+  <footer class="text-center text-lg-start bg-light text-muted">
      
         <div class="text-center p-4">
             © 2023 Copyright Aramis Blog
