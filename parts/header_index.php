@@ -1,4 +1,4 @@
-<?php require_once __DIR__ . '/../includes/app.php';?> 
+<?php require_once __DIR__ . '../includes/app.php';?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
