@@ -2,3 +2,5 @@
 blog.sql
 composer.lock
 .env
+.sql
+.pdf
