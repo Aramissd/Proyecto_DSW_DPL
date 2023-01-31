@@ -62,7 +62,7 @@ if ($rol === "Administrador"){
       ?>
 
 
-        <div class="col-md-8 mx-auto">
+        <div class="col-md-8 mx-auto container_publicacion">
           <div class="card mb-3">
             <img src= <?php echo "../views/gestion_publicaciones/images/$publicacion[imagen]"?> class="card-img-top" alt="..." width="200" height="400"/>
             <div class="card-body">
