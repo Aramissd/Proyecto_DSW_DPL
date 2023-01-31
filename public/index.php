@@ -1,6 +1,6 @@
 <?php 
 session_start();
-if ($rol = $_SESSION['rol']){
+if ($_SESSION['rol']){
     $rol = $_SESSION['rol'];
     $_SESSION['start'] = time();
     $_SESSION['expire'] = $_SESSION['start'] + (40 * 60);
