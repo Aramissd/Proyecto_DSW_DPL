@@ -6,7 +6,7 @@ if ($rol === "Administrador"){
     $_SESSION['start'] = time();
     $_SESSION['expire'] = $_SESSION['start'] + (40 * 60);
 } else{
-  header('Location: ../views/auth/login.php'); //Aqui lo redireccionas al lugar que quieras.
+  header('Location: ../views/auth/login.php');
   die() ;
 }
 ?>
