@@ -29,12 +29,12 @@ if ($rol === "Administrador"){
             <a class="nav-link" href="../../public/index.php">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><?php if ($_SESSION['rol'] === "Administrador") {
+            <a class="nav-link" href="../gestion_usuarios/gestionar_usuarios.php"><?php if ($_SESSION['rol'] === "Administrador") {
               echo "Gestionar usuarios";
             }?></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><?php if ($_SESSION['rol'] === "Administrador") {
+            <a class="nav-link" href="../gestion_categorias/gestionar_categorias.php"><?php if ($_SESSION['rol'] === "Administrador") {
               echo "Gestionar categorías";
             }?></a>
           </li>
@@ -47,10 +47,6 @@ if ($rol === "Administrador"){
           <li class="nav-item">
             <a class="nav-link" href="../controllers/logout.php">Cerrar sesión</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../controllers/logout.php"><?php echo $_SESSION['id']?></a>
-          </li>
-
         </ul>
       </div>
     </nav>

@@ -32,18 +32,18 @@ if ($rol === "Administrador"){
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#"><?php if ($_SESSION['rol'] === "Administrador") {
+            <a class="nav-link" href="../gestion_usuarios/gestionar_usuarios.php"><?php if ($_SESSION['rol'] === "Administrador") {
               echo "Gestionar usuarios";
             }?></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><?php if ($_SESSION['rol'] === "Administrador") {
+            <a class="nav-link" href="../gestion_categorias/gestionar_categorias.php"><?php if ($_SESSION['rol'] === "Administrador") {
               echo "Gestionar categorías";
             }?></a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#"><?php if ($_SESSION['rol'] === "Administrador") {
+            <a class="nav-link" href="../gestion_publicaciones/gestionar_publicaciones.php"><?php if ($_SESSION['rol'] === "Administrador") {
               echo "Gestionar publicaciones";
             }?></a>
           </li>
