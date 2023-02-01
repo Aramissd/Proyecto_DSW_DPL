@@ -31,6 +31,9 @@ function validarLogin($db)
       $_SESSION['id'] = $usuario['id'];
       header('Location: ../index.php');
     }
+    else{
+      echo "error";
+    }
 
   }
   mysqli_stmt_close($stmt);
