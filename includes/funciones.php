@@ -33,7 +33,9 @@ function validarLogin($db)
       header('Location: ../index.php');
     }
     else{
-      echo "error";
+      header('Location: ../views/auth/login.php');
+
+      
     }
 
   }
