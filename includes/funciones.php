@@ -1,6 +1,5 @@
 <?php
 ob_start();
-
 /**
 * Valida las credenciales de un usuario enviadas a través de un formulario de inicio de sesión.
 * @access public
@@ -9,34 +8,32 @@ ob_start();
 */
 function validarLogin($db)
 {
-  if(isset($_POST['login'])){
+  if(isset($_POST['boton_login'])){
      // Validamos los datos del formulario, con trim limpiamos los espacios que pueda haber en el email.
-  $correo = trim($_POST['correo']);
-  $password = $_POST['password'];
+    $correo = trim($_POST['correo']);
+    $password = $_POST['password'];
 
-  $stmt = mysqli_prepare($db, "SELECT * FROM usuarios WHERE correo=?");
-  mysqli_stmt_bind_param($stmt, "s", $correo);
-  mysqli_stmt_execute($stmt);
-  $result = mysqli_stmt_get_result($stmt);
+    $stmt = mysqli_prepare($db, "SELECT * FROM usuarios WHERE correo=?");
+    mysqli_stmt_bind_param($stmt, "s", $correo);
+    mysqli_stmt_execute($stmt);
+    $result = mysqli_stmt_get_result($stmt);
 
-  if ($result && mysqli_num_rows($result) == 1) {
-    $usuario = mysqli_fetch_assoc($result);
-    // Comprobamos la contraseña | Volvemos a cifrarla.
-    $verificar = password_verify($password, $usuario['password']);
-    //Si la contraseña coincide iniciamos sesión y guardamos datos de sesión
-    if ($verificar) {
-      session_start();
-      // Guardamos los datos del usuario logueado.
-      $_SESSION['nombre'] = $usuario['nombre'];
-      $_SESSION['rol'] = $usuario['rol'];
-      $_SESSION['id'] = $usuario['id'];
-      header('Location: ../index.php');
-    }
-    else{
-      header('Location: ../views/auth/login.php');
-
-      
-    }
+    if ($result && mysqli_num_rows($result) == 1) {
+      $usuario = mysqli_fetch_assoc($result);
+      // Comprobamos la contraseña | Volvemos a cifrarla.
+      $verificar = password_verify($password, $usuario['password']);
+      //Si la contraseña coincide iniciamos sesión y guardamos datos de sesión
+      if ($verificar) {
+        session_start();
+        // Guardamos los datos del usuario logueado.
+        $_SESSION['nombre'] = $usuario['nombre'];
+        $_SESSION['rol'] = $usuario['rol'];
+        $_SESSION['id'] = $usuario['id'];
+        header("Location: ../index.php");
+      }
+      else{
+        header('Location: ../views/auth/login.php');      
+      }
 
   }
   mysqli_stmt_close($stmt);
