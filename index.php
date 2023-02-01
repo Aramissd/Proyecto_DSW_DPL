@@ -95,4 +95,4 @@ if ($_SESSION['rol']){
 
         </footer>
     
-    <?php include "../parts/footer.php";?>
+    <?php include "parts/footer.php";?>
