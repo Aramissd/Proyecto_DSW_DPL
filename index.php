@@ -1,4 +1,4 @@
-<?php include "../parts/header_index.php";?>
+<?php include "parts/header_index.php";?>
 <?php 
 session_start();
 if ($_SESSION['rol']){
@@ -6,7 +6,7 @@ if ($_SESSION['rol']){
     $_SESSION['start'] = time();
     $_SESSION['expire'] = $_SESSION['start'] + (40 * 60);
 } else{
-  header('Location: ../views/auth/login.php');
+  header('Location: views/auth/login.php');
   die() ;
 }
 ?>
