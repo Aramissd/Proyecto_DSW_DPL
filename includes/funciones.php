@@ -61,35 +61,44 @@ function crear_Usuario($con)
   if (isset($_POST['registrar_usuario'])) {
 
     // Recogemos los valores del formulario.
-    $nombre = isset($_POST['nombre']) ?  mysqli_real_escape_string($con,$_POST['nombre']) : false;
-    $apellidos = isset($_POST['apellidos']) ?  mysqli_real_escape_string($con,$_POST['apellidos']) : false;
-    $correo = isset($_POST['correo']) ? mysqli_real_escape_string($con, $_POST['correo']): false;
-    $password = isset($_POST['password']) ?  mysqli_real_escape_string($con,$_POST['password']) : false;
+    $nombre = isset($_POST['nombre']) ? mysqli_real_escape_string($con, $_POST['nombre']) : false;
+    $apellidos = isset($_POST['apellidos']) ? mysqli_real_escape_string($con, $_POST['apellidos']) : false;
+    $correo = isset($_POST['correo']) ? mysqli_real_escape_string($con, $_POST['correo']) : false;
+    $password = isset($_POST['password']) ? mysqli_real_escape_string($con, $_POST['password']) : false;
 
-    
-    if (!empty($nombre) && !is_numeric($nombre) && !preg_match("/[0-9]/", $nombre) && !empty($apellidos) && !is_numeric($apellidos) && !preg_match("/[0-9]/", $apellidos)) 
+
+    $sql_email = "SELECT id FROM usuarios WHERE correo = ?";
+    $stmt_email = mysqli_prepare($con, $sql_email);
+    mysqli_stmt_bind_param($stmt_email, "s", $correo);
+    mysqli_stmt_execute($stmt_email);
+    $result_email = mysqli_stmt_get_result($stmt_email);
+    $email_existente = mysqli_num_rows($result_email);
+
+    if ($email_existente == 0)
     {
-         // Ciframos la contraseña con bcrypt y le damos un valor de 4 para que la cifre 4 veces
-         $password_segura = password_hash($password, PASSWORD_BCRYPT, ['cost' => 4]);
 
-         //Preparamos la consulta
-         $sql =  "INSERT INTO usuarios (nombre, apellidos, password, correo, rol) VALUES (?,?,?,?,'Normal')";
-         $stmt = mysqli_prepare($con, $sql);
-         mysqli_stmt_bind_param($stmt, "ssss", $nombre, $apellidos, $password_segura, $correo);
-         mysqli_stmt_execute($stmt);
 
-         if (mysqli_stmt_affected_rows($stmt) > 0) {
+      if (!empty($nombre) && !is_numeric($nombre) && !preg_match("/[0-9]/", $nombre) && !empty($apellidos) && !is_numeric($apellidos) && !preg_match("/[0-9]/", $apellidos)) 
+      {
+        // Ciframos la contraseña con bcrypt y le damos un valor de 4 para que la cifre 4 veces
+        $password_segura = password_hash($password, PASSWORD_BCRYPT, ['cost' => 4]);
+
+        //Preparamos la consulta
+        $sql = "INSERT INTO usuarios (nombre, apellidos, password, correo, rol) VALUES (?,?,?,?,'Normal')";
+        $stmt = mysqli_prepare($con, $sql);
+        mysqli_stmt_bind_param($stmt, "ssss", $nombre, $apellidos, $password_segura, $correo);
+        mysqli_stmt_execute($stmt);
+
+        if (mysqli_stmt_affected_rows($stmt) > 0) {
           echo "<div class = 'alert-success'>Registro exitoso, ya puedes iniciar sesión</div>";
 
-           
-         } else {
-           echo "<div class = 'alert-danger'>Error en el registro</div>";
-         }
-    }
 
-    else
-    {
-      echo "<div class = 'alert-danger'>Error en el registro</div>";
+        } else {
+          echo "<div class = 'alert-danger'>Error en el registro</div>";
+        }
+      }
+    } else{
+      echo "<div class = 'alert-danger'>Error en el registro, este correo ya existe</div>";
     }
   }
 }
