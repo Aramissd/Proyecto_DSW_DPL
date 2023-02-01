@@ -18,7 +18,7 @@
 								<div class="form-group">        
 									<input type="password" class="form-control input-lg" name="password" placeholder="contrase&ntilde;a" required>       
 								</div>								    
-								<button type="submit"name = "boton_login" class="btn btn-success btn-block">Iniciar sesión</button>
+								<button type="submit"name = "boton_login" class="btn btn-success btn-block" name = "login">Iniciar sesión</button>
 							</form>
 						</div>					
 							<hr><p>¿Nuevo en Blog Aramis? <a href="registro.php" title="Crea una cuenta">Crea una cuenta</a>.</p>								
