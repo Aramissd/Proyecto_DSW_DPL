@@ -1,3 +1,4 @@
+<?php include "../parts/header_index.php";?>
 <?php 
 session_start();
 if ($_SESSION['rol']){
@@ -9,7 +10,6 @@ if ($_SESSION['rol']){
   die() ;
 }
 ?>
-<?php include "../parts/header_index.php";?>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="index.php">Aramis Blog</a>
