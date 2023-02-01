@@ -29,7 +29,7 @@ function validarLogin($db)
       $_SESSION['nombre'] = $usuario['nombre'];
       $_SESSION['rol'] = $usuario['rol'];
       $_SESSION['id'] = $usuario['id'];
-      header('Location: ../../public/index.php');
+      header('Location: ../index.php');
     }
 
   }
