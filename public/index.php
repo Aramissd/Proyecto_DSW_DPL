@@ -1,6 +1,5 @@
 <?php 
 session_start();
-
 if ($_SESSION['rol']){
     $rol = $_SESSION['rol'];
     $_SESSION['start'] = time();
