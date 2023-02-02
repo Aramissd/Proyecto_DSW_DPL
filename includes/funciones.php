@@ -35,7 +35,9 @@ function validarLogin($db)
 
       }
       else{
-        header('Location: ../views/auth/login.php');      
+        header('Location: ../views/auth/login.php'); 
+        mysqli_stmt_close($stmt);
+     
       }
 
     }
