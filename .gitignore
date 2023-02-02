@@ -1,7 +1,9 @@
 /vendor/
 blog.sql
 composer.lock
+composer.json
 .env
 env
 .sql
 .pdf
+.DS_STORE
