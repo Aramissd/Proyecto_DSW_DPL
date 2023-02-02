@@ -44,6 +44,5 @@ Se pueden llevar a cabo varias mejoras en el proyecto, tales como:
 
 ## Licencia
 
-
-
+MIT
 
