@@ -61,7 +61,7 @@ if ($_SESSION['rol']){
 
         <div class="col-md-8 mx-auto container_publicacion">
           <div class="card mb-3">
-            <img src= <?php echo "views/gestion_publicaciones/images/$publicacion[imagen]"?> class="card-img-top" alt="..." width="200" height="400"/>
+            <img src= <?php echo "../views/gestion_publicaciones/images/$publicacion[imagen]"?> class="card-img-top" alt="..." width="200" height="400"/>
             <div class="card-body">
               <h5 class="card-title"><?php echo $publicacion['titulo']?></h5>
               <p><?php echo "Fecha de creación: " . $publicacion['fecha_creacion'] ?> | <b><?php echo $publicacion['usuario']; ?></b></p>
