@@ -55,9 +55,9 @@ if ($rol === "Administrador"){
 
         <form action="editar.php" method="POST" enctype="multipart/form-data">
         <div class="form-group mx-auto">
-            <input type="hidden" class="form-control form-control-sm mb-2" value="<?=$publicacion_actual['id']?>" autocomplete="off" name="id_publicacion" maxlength="30" required>
+            <input type="hidden" class="form-control form-control-sm mb-2" value="<?=$publicacion_actual['id']?>" autocomplete="off" name="id_publicacion" required>
             <label for = "FormControlTitulo">Titulo:</label>
-            <input type="text" class="form-control form-control-sm mb-2" value="<?=$publicacion_actual['titulo']?>" autocomplete="off" name="titulo" maxlength="30" required>
+            <input type="text" class="form-control form-control-sm mb-2" value="<?=$publicacion_actual['titulo']?>" autocomplete="off" name="titulo" maxlength="90" required>
         </div>
             <label for="FormControlContenido">Contenido:</label>
             <textarea class="form-control" rows="5" name="contenido"required><?=$publicacion_actual['contenido']?></textarea><br>
