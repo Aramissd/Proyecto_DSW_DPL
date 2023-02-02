@@ -1,5 +1,5 @@
 <?php 
-include "../../parts/header.php";
+include("../../parts/header.php");
 session_start();
 $rol = $_SESSION['rol'];
 if ($rol === "Administrador"){
