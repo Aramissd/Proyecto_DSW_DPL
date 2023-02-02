@@ -10,17 +10,17 @@ if ($rol === "Administrador"){
   die() ;
 }
 ?>
-<?php include "../../parts/header.php";?>
+<?php require "../../parts/header.php";?>
   <header> 
       <nav class="navbar navbar-expand-sm bg-light">
-        <a class="navbar-brand" href="../../public/index.php">Aramis Blog</a>
+        <a class="navbar-brand" href="../../../index.php">Aramis Blog</a>
         <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button> -->
         <div class="collapse navbar-collapse container-fluid" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="../../public/index.php">Inicio</a>
+              <a class="nav-link" href="../../../index.php">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../gestion_usuarios/gestionar_usuarios.php"><?php if ($_SESSION['rol'] === "Administrador") {

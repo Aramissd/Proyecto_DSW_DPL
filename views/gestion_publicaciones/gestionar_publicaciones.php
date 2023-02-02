@@ -1,5 +1,5 @@
+<?php require "../../parts/header.php";?>
 <?php 
-include("../../parts/header.php");
 session_start();
 $rol = $_SESSION['rol'];
 if ($rol === "Administrador"){
@@ -13,32 +13,32 @@ if ($rol === "Administrador"){
 ?>
   <header>
       <nav class="navbar navbar-expand-sm bg-light">
-        <a class="navbar-brand" href="../../index.php" class = "enlaces">Aramis Blog</a>
+        <a class="navbar-brand" href="../../index.php" style="color: inherit;">Aramis Blog</a>
         <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button> -->
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="../../index.php">Inicio</a>
+              <a class="nav-link" href="../../index.php" style="color: inherit;">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../../index.php"><?php if ($_SESSION['rol'] === "Administrador") {
+              <a class="nav-link" href="../../index.php" style="color: inherit;"><?php if ($_SESSION['rol'] === "Administrador") {
                 echo "Gestionar usuarios";
               }?></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../gestion_categorias/gestionar_categorias.php"><?php if ($_SESSION['rol'] === "Administrador") {
+              <a class="nav-link" href="../gestion_categorias/gestionar_categorias.php" style="color: inherit;"><?php if ($_SESSION['rol'] === "Administrador") {
                 echo "Gestionar categorías";
               }?></a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="gestionar_publicaciones.php"><?php if ($_SESSION['rol'] === "Administrador") {
+              <a class="nav-link" href="gestionar_publicaciones.php" style="color: inherit;"><?php if ($_SESSION['rol'] === "Administrador") {
                 echo "Gestionar publicaciones";
               }?></a>
             </li>
             <li class="nav-item cerrar">
-              <a class="nav-link" href="../../controllers/logout.php">Cerrar sesión</a>
+              <a class="nav-link" href="../../controllers/logout.php" style="color: inherit;">Cerrar sesión</a>
             </li>
 
           </ul>

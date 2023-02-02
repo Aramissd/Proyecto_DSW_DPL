@@ -1,4 +1,4 @@
-<?php include ("parts/header_index.php");?>
+<?php include "parts/header_index.php";?>
 <?php 
 session_start();
 if ($_SESSION['rol']){
