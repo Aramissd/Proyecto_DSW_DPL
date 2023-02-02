@@ -3,7 +3,7 @@
         'name' => 'aramis/proyecto_dsw_dpl',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'e9f2eb8447bfb90f2ae7baf172a7c7986fdfc57c',
+        'reference' => 'cf5db308318f3f64dca340dac67e59093435b0f8',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'aramis/proyecto_dsw_dpl' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'e9f2eb8447bfb90f2ae7baf172a7c7986fdfc57c',
+            'reference' => 'cf5db308318f3f64dca340dac67e59093435b0f8',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
