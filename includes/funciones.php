@@ -31,13 +31,14 @@ function validarLogin($db)
         $_SESSION['rol'] = $usuario['rol'];
         $_SESSION['id'] = $usuario['id'];
         header("Location: ../../index.php");
+        mysqli_stmt_close($stmt);
+
       }
       else{
         header('Location: ../views/auth/login.php');      
       }
 
     }
-  mysqli_stmt_close($stmt);
 
   }
  
