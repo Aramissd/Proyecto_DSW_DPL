@@ -37,7 +37,7 @@ if ($_SESSION['rol']){
           </li>
           
           <li class="nav-item">
-            <a class="nav-link" href="controllers/logout.php">Cerrar sesión</a>
+            <a class="nav-link" href="/controllers/logout.php">Cerrar sesión</a>
           </li>
 
         </ul>
