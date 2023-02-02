@@ -8,7 +8,8 @@ ob_start();
 */
 function validarLogin($db)
 {
-  if(isset($_POST['boton_login'])){
+  if(isset($_POST['boton_login']))
+  {
      // Validamos los datos del formulario, con trim limpiamos los espacios que pueda haber en el email.
     $correo = trim($_POST['correo']);
     $password = $_POST['password'];
@@ -35,7 +36,7 @@ function validarLogin($db)
         header('Location: ../views/auth/login.php');      
       }
 
-  }
+    }
   mysqli_stmt_close($stmt);
 
   }

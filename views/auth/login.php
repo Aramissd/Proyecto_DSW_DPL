@@ -11,14 +11,14 @@
 					<div class="card">
 						<div class="loginBox">
 							<h2>Iniciar sesi&oacute;n</h2><br>
-							<form action="<?php echo $_SERVER['PHP_SELF']?>" method="post">                           	
+							<form action="" method="post">                           	
 								<div class="form-group">									
 									<input type="email" class="form-control input-lg" name="correo" placeholder="email"  required>        
 								</div>							
 								<div class="form-group">        
 									<input type="password" class="form-control input-lg" name="password" placeholder="contrase&ntilde;a" required>       
 								</div>								    
-								<button type="submit"name = "boton_login" class="btn btn-success btn-block" name = "boton_login">Iniciar sesión</button>
+								<button type="submit" class="btn btn-success btn-block" name = "boton_login">Iniciar sesión</button>
 							</form>
 						</div>					
 							<hr><p>¿Nuevo en Blog Aramis? <a href="registro.php" title="Crea una cuenta">Crea una cuenta</a>.</p>								
