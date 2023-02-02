@@ -1,5 +1,4 @@
 <?php
-ob_start();
 /**
 * Valida las credenciales de un usuario enviadas a través de un formulario de inicio de sesión.
 * @access public
@@ -30,7 +29,7 @@ function validarLogin($db)
         $_SESSION['nombre'] = $usuario['nombre'];
         $_SESSION['rol'] = $usuario['rol'];
         $_SESSION['id'] = $usuario['id'];
-        header("Location: ../../index.php");
+        header("Location: ../index.php");
         mysqli_stmt_close($stmt);
 
       }
