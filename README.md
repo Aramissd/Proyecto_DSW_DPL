@@ -39,6 +39,7 @@ Se pueden llevar a cabo varias mejoras en el proyecto, tales como:
 2. Implementación de un sistema de comentarios en los artículos, con la posibilidad de moderarlos antes de su publicación. 
 3. Mejora en el sistema de autenticación mediante la utilización de autenticación por token.
 4. Implementación de un sistema de recomendación de artículos basados en los gustos y preferencias de cada usuario.
+5. Usar clases y métodos en lugar de funciones
 
 
 ## Licencia
