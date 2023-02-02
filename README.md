@@ -14,7 +14,7 @@ Además, se ha implementado un sistema de autenticación mediante sesiones y un 
 
 En resumen, la implementación de este proyecto consiste en la conexión a la base de datos y la gestión de los datos mediante funciones CRUD, la utilización de variables de entorno para garantizar la seguridad de las credenciales, y un sistema de autenticación y registro de usuarios con diferentes roles para controlar el acceso a la aplicación.
 
-##Posibles mejoras del proyecyo
+## Posibles mejoras del proyecto
 
 Se pueden llevar a cabo varias mejoras en el proyecto, tales como:
 
