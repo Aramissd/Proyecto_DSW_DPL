@@ -50,7 +50,7 @@ if ($rol === "Administrador"){
         </ul>
     </nav>
   </header>
-  <div class="container-fluid mx-auto text-center col-2">
+  <div class="container-fluid mx-auto text-center col-6">
 
        <br><h1>Crear la categoría</h1>
 
