@@ -1,3 +1,4 @@
+<?php include "../../parts/header_index.php";?>
 <?php 
 session_start();
 $rol = $_SESSION['rol'];
@@ -10,7 +11,6 @@ if ($rol === "Administrador"){
   die() ;
 }
 ?>
-<?php include "../../parts/header_index.php";?>
   <header>
       <nav class="navbar navbar-expand-sm bg-light">
         <a class="navbar-brand" href="../../index.php">Aramis Blog</a>
