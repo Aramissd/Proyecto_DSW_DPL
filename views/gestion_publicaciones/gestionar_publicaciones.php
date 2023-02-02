@@ -1,5 +1,5 @@
 <?php 
-include "../../parts/header_index.php";
+include "../../parts/header.php";
 session_start();
 $rol = $_SESSION['rol'];
 if ($rol === "Administrador"){
@@ -13,7 +13,7 @@ if ($rol === "Administrador"){
 ?>
   <header>
       <nav class="navbar navbar-expand-sm bg-light">
-        <a class="navbar-brand" href="../../index.php">Aramis Blog</a>
+        <a class="navbar-brand enlaces" href="../../index.php" >Aramis Blog</a>
         <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button> -->
