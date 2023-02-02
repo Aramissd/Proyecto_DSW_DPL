@@ -4,19 +4,6 @@ footer {
   .container_publicacion{
     margin-bottom:100px;
   }
-
-  ul{
-    list-style-type: none;
-    color: black;
-  }
-
-  li{
-    list-style-type: none;
-    color: black;
-
-  }
-
 a{
-  outline:none;
   color: inherit; 
 }

@@ -37,7 +37,7 @@ if ($rol === "Administrador"){
                 echo "Gestionar publicaciones";
               }?></a>
             </li>
-            <li class="nav-item cerrar">
+            <li class="nav-item">
               <a class="nav-link" href="../../controllers/logout.php" style="color: inherit;">Cerrar sesión</a>
             </li>
 

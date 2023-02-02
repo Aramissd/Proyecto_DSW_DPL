@@ -16,8 +16,8 @@ if ($_SESSION['rol']){
       <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button> -->
-        <ul class="navbar-nav list-inline">
-          <li class="nav-item list-unstyled">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
             <a class="nav-link" href="index.php">Inicio</a>
           </li>
           <li class="nav-item">
@@ -36,7 +36,7 @@ if ($_SESSION['rol']){
             }?></a>
           </li>
           
-          <li class="nav-item cerrar">
+          <li class="nav-item">
             <a class="nav-link" href="/controllers/logout.php">Cerrar sesión</a>
           </li>
 
