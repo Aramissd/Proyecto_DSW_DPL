@@ -11,14 +11,13 @@ if ($_SESSION['rol']){
 }
 ?>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-sm bg-light">
       <a class="navbar-brand" href="index.php">Aramis Blog</a>
       <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button> -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
+        <ul class="navbar-nav list-inline">
+          <li class="nav-item list-unstyled">
             <a class="nav-link" href="index.php">Inicio</a>
           </li>
           <li class="nav-item">
@@ -42,7 +41,6 @@ if ($_SESSION['rol']){
           </li>
 
         </ul>
-      </div>
     </nav>
   </header>
   <main>
