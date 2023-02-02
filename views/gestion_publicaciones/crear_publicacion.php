@@ -58,7 +58,7 @@ if ($rol === "Administrador"){
    <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data">
       <div class="form-group col-6 mx-auto"><br>
           <h1 class="text-center">Crear publicaciones</h1><br>
-        <input type="text" class="form-control" placeholder="Titulo de la entrada"  name="titulo" maxlength="100" required>
+        <input type="text" class="form-control" placeholder="Titulo de la entrada"  name="titulo" required>
       </div>
       <div class="form-group col-6 mx-auto">
           <label for="FormControlContenido">Contenido:</label>
