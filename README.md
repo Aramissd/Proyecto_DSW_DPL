@@ -1,18 +1,20 @@
 # Proyecto_DSW_DPL
 ## Instalación
-Debes tener instalado COMPOSER una vez hayas clonado el proyecto, posteriormente ejecutar el comando: composer require vlucas/phpdotenv que es la dependencia necesaria para poder usar variables de entorno y por último ejecutar el comando composer update para actualizar las dependencias. 
+Debes tener instalado COMPOSER y git. Una vez hayas clonado el proyecto, posteriormente ejecutar el comando: composer require vlucas/phpdotenv que es la dependencia necesaria para poder usar variables de entorno y por último ejecutar el comando composer update para actualizar las dependencias.
+
 
 ~~~
+git clone https://github.com/Aramissd/Proyecto_DSW_DPL
+~~~
 
+~~~
 composer require vlucas/phpdotenv
-
 ~~~
-
 ~~~
-
 composer update
-
 ~~~
+
+Tras ejecutar estos comandos ya se puede usar el proyecto con normalidad, para ello habría que ejecutar el archivo index.php y si no existiera ninguna sesión activa este nos redirige a la página de inicio de sesión
 
 ## Introducción
 Este proyecto tiene como objetivo crear un blog donde se publicarán artículos de distinta índole. Las publicaciones contarán con un título, una imagen, el contenido de la noticia y la categoría de la misma. Además, se proporciona un sistema de autenticación a través de sesiones y un sistema de registro de usuarios. Para el almacenamiento de los datos, se utiliza una base de datos MySQLi. Además, se han implementado diferentes roles de usuario para permitir diferentes operaciones dependiendo del rol asignado en la base de datos.
@@ -35,6 +37,10 @@ Se pueden llevar a cabo varias mejoras en el proyecto, tales como:
 2. Implementación de un sistema de comentarios en los artículos, con la posibilidad de moderarlos antes de su publicación. 
 3. Mejora en el sistema de autenticación mediante la utilización de autenticación por token.
 4. Implementación de un sistema de recomendación de artículos basados en los gustos y preferencias de cada usuario.
+
+
+## Licencia
+
 
 
 
