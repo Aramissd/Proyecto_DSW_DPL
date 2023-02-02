@@ -1,9 +1,12 @@
 footer {
-  position: fixed; bottom: 0;width: 100%;height: 60px;
-  }
-  .container_publicacion{
+  position: fixed; 
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+}
+.container_publicacion{
     margin-bottom:100px;
-  }
+}
 a{
   color: inherit; 
 }
