@@ -11,7 +11,7 @@
 					<div class="card">
 						<div class="loginBox">
 							<h2>Iniciar sesi&oacute;n</h2><br>
-							<form action="" method="post">                           	
+							<form action="<?php echo $_SERVER['PHP_SELF']?>" method="post">                           	
 								<div class="form-group">									
 									<input type="email" class="form-control input-lg" name="correo" placeholder="email"  required>        
 								</div>							
